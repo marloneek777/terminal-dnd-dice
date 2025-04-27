@@ -14,7 +14,7 @@ int main()
 
     bool x = checkUserInput(userInput); // is valid input
     std::cout << x << "<-";
-    //siema
+    //siemaeniu
 }
 
 /*
