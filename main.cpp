@@ -5,7 +5,6 @@
 #include "InputValidation.h"
 #include "input.h"
 
-
 int main()
 {
     std::string userInput{};
@@ -14,7 +13,7 @@ int main()
 
     bool x = checkUserInput(userInput); // is valid input
     std::cout << x << "<-";
-    //siemaeniu
+
 }
 
 /*

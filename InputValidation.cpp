@@ -1,28 +1,43 @@
 #include <iostream>
 #include <string>
+#include <vector>
+#include <boost/algorithm/string.hpp>
 
 void missingBackslashWarning();
 void emptyStringWarning();
+
 bool stringContainsChar(std::string& s, char charToFind);
 bool startsWithSlash(const std::string& s);
 std::string removeSpaces(const std::string& s);
 
 bool checkUserInput(std::string& userInput)
 {
-	if (userInput.empty())
+
+	std::string trimmed_input = boost::algorithm::trim_copy(userInput);
+
+	if (trimmed_input.empty())
 	{
 		emptyStringWarning();
 		return false;
 	}
 
-	if (!startsWithSlash(userInput))
+	if (!startsWithSlash(trimmed_input))
 	{
 		missingBackslashWarning();
 		return false;
 	}
-	
+
+
 	return true;
 }
+
+//void readCommandAfterSlash(const std::string& s)
+//{
+//	for (int i = 0; i < s.size() + 1; ++i)
+//	{
+//
+//	}
+//}
 
 void missingBackslashWarning()
 {
