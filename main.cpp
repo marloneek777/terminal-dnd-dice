@@ -2,18 +2,16 @@
 #include <string>
 
 #include "hand.h"
-#include "InputValidation.h"
 #include "input.h"
+#include "commandhandler.h"
 
 int main()
 {
-    std::string userInput{};
+    CommandHandler handler;
 
-    std::getline(std::cin, userInput);
+    handler.printCommands();
 
-    bool x = checkUserInput(userInput); // is valid input
-    std::cout << x << "<-";
-
+    return 0;
 }
 
 /*

@@ -143,15 +143,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="commandhandler.cpp" />
     <ClCompile Include="hand.cpp" />
     <ClCompile Include="input.cpp" />
-    <ClCompile Include="InputValidation.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="commandhandler.h" />
     <ClInclude Include="hand.h" />
     <ClInclude Include="input.h" />
-    <ClInclude Include="InputValidation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

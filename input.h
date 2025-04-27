@@ -1,6 +1,6 @@
 #ifndef INPUT_H
 #define INPUT_H
 
-void getUserInput();
+std::string getInput();
 
 #endif
